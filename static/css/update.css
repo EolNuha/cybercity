@@ -1,0 +1,114 @@
+.ie-panel {
+    display: none;
+    background: #212121;
+    padding: 10px 0;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+    clear: both;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  html.ie-10 .ie-panel,
+  html.lt-ie-10 .ie-panel {
+    display: block;
+  }
+
+  .fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .parallax-scene .layer-01 {
+    left: 80px;
+    top: 55px;
+  }
+
+  .parallax-scene .layer-08 {
+    left: 285px;
+    top: 145px;
+    opacity: 0.6;
+  }
+
+  .parallax-scene .layer-07 {
+    left: 85%;
+    top: 75%;
+    opacity: 0.6;
+  }
+
+  .parallax-scene .layer-06 {
+    display: none;
+  }
+
+  .zoom {
+    transition: transform .2s;
+    /* Animation */
+  }
+
+  .zoom:hover {
+    transform: scale(1.03);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+
+  .fa-twitter:hover {
+    color: #00acee;
+  }
+
+  .fa-linkedin:hover {
+    color: #0e76a8;
+  }
+
+  .fa-google:hover {
+    color: #B23121;
+  }
+
+  .bg-default1 {
+    fill: black;
+    background-color: black !important;
+  }
+
+  .novi-bg {
+    background-image: url('static/images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-simple {
+    color: #6d0eb1;
+  }
+
+
+  .novi-bg1 {
+    background-color: black;
+  }
+
+  #more {
+    display: none;
+  }
+
+  .myreadingBtn {
+    color: blueviolet;
+    border: none;
+  }
+
+  .myreadingBtn:hover {
+    background-color: blueviolet;
+    color: white;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #removefooter {
+      display: none;
+    }
+  }
+
+  #light-mode {
+    display: none;
+  }

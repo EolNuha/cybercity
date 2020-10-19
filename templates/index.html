@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>Cyber City | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="/cdn-cgi/apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
+  <link rel="icon" href="static/images/logocyber2.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Oswald:200,400%7CLato:300,400,300italic,700%7CMontserrat:900">
+  <link rel="stylesheet" href="static/css/bootstrap.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/fonts.css">
+  <link rel="stylesheet" href="static/css/novi.css">
+  <link rel="stylesheet" href="static/css/update.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+  .ie-panel {
+    display: none;
+    background: #212121;
+    padding: 10px 0;
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+    clear: both;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  html.ie-10 .ie-panel,
+  html.lt-ie-10 .ie-panel {
+    display: block;
+  }
+
+  .fa {
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .parallax-scene .layer-01 {
+    left: 80px;
+    top: 55px;
+  }
+
+  .parallax-scene .layer-08 {
+    left: 285px;
+    top: 145px;
+    opacity: 0.6;
+  }
+
+  .parallax-scene .layer-07 {
+    left: 85%;
+    top: 75%;
+    opacity: 0.6;
+  }
+
+  .parallax-scene .layer-06 {
+    display: none;
+  }
+
+  .zoom {
+    transition: transform .2s;
+    /* Animation */
+  }
+
+  .zoom:hover {
+    transform: scale(1.03);
+    /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .fa-facebook:hover {
+    color: #3b5998;
+  }
+
+  .fa-twitter:hover {
+    color: #00acee;
+  }
+
+  .fa-linkedin:hover {
+    color: #0e76a8;
+  }
+
+  .fa-google:hover {
+    color: #B23121;
+  }
+
+  .bg-default1 {
+    fill: black;
+    background-color: black !important;
+  }
+
+  .novi-bg {
+    background-image: url('static/images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .box-simple {
+    color: #6d0eb1;
+  }
+
+
+  .novi-bg1 {
+    background-color: black;
+  }
+
+  #more {
+    display: none;
+  }
+
+  .myreadingBtn {
+    color: blueviolet;
+    border: none;
+  }
+
+  .myreadingBtn:hover {
+    background-color: blueviolet;
+    color: white;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #removefooter {
+      display: none;
+    }
+  }
+
+  #light-mode {
+    display: none;
+  }
+</style>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="page-loader">
+    <div class="page-loader-logo-name">Cyber City</div>
+    <div class="preloader-wrapper preloader-big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div>
+        <div class="gap-patch">
+          <div class="circle"></div>
+        </div>
+        <div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page">
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!--Light mode-->
+    <div id="light-mode">
+      <header class="section novi-bg novi-bg-img page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2">
+        <div class="rd-navbar-wrap rd-navbar-default">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static"
+            data-xxl-layout="rd-navbar-static" data-xxxl-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fullwidth" data-xl-device-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static" data-xxxl-device-layout="rd-navbar-static"
+            data-stick-up-offset="1px" data-sm-stick-up-offset="1px" data-md-stick-up-offset="1px"
+            data-lg-stick-up-offset="1px" data-xl-stick-up-offset="1px" data-xxl-stick-up-offset="1px"
+            data-xxx-lstick-up-offset="1px" data-stick-up="true">
+            <div class="rd-navbar-inner">
+              <div class="rd-navbar-panel"> <button class="rd-navbar-toggle"
+                  data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <div class="rd-navbar-brand"> <a class="brand-name" href="/"><img class="logo-default zoom"
+                      src="static/images/cyberlogo4.png" alt="" height="51px"><img class="logo-inverse zoom"
+                      src="static/images/cyberlogo4.png" alt="" height="51px"></a>
+                </div>
+              </div>
+              <div class="rd-navbar-aside-right">
+                <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                <div class="rd-navbar-aside-right-inner" style="margin-right: 25px; padding-top: 3px;">
+                  <i class="fa fa-toggle-off" onclick="mydarkmodeFunction()"></i>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active" style="margin-right: 25px;"><a class="rd-nav-link" href="/">Home</a>
+                    </li>
+                  </ul>
+                </div>
+                
+
+                <div class="rd-navbar-aside-right-inner rd-navbar-collapse">
+                  <a class="button button-sm button-default-outline button-nina" href="/contactus">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <section class="breadcrumbs-custom breadcrumbs-custom-lg breadcrumbs-custom-svg">
+          <div class="container">
+            <h3 class="typed-text-wrap"><span data-novi-id="1" style="color: white; font-size: 60px;">Cyber city</span>
+            </h3>
+            <h5 class="fadeIn" style="color: #f1f1f1; font-size: 25px;"><span data-novi-id="2"><span
+                  class="typed-text"></span></span></h5>
+            <div class="group-md button-group"><a class="button button-default-outline button-nina" href="/contactus"
+                target="_blank">contact us&nbsp;</a></div>
+          </div>
+          <div class="parallax-scene-js parallax-scene" data-scalar-x="5" data-scalar-y="10">
+            <div class="layer-01">
+              <div class="layer" data-depth="0.25"><img src="static/images/logocyber.png" alt="" width="132"
+                  height="133">
+              </div>
+            </div>
+            <div class="layer-07">
+              <div class="layer" data-depth=".35"><img src="static/images/logocyber.png" alt="" width="186"
+                  height="208">
+              </div>
+            </div>
+            <div class="layer-08">
+              <div class="layer" data-depth=".30"><img src="static/images/logocyber.png" alt="" width="150"
+                  height="151">
+              </div>
+            </div>
+            <div class="layer-03">
+              <div class="layer" data-depth="0.1"><img src="static/images/logocyber.png" alt="" width="108"
+                  height="120">
+              </div>
+            </div>
+            <div class="layer-04">
+              <div class="layer" data-depth="0.25"><img src="static/images/logocyber.png" alt="" width="124"
+                  height="145">
+              </div>
+            </div>
+            <div class="layer-05">
+              <div class="layer" data-depth="0.15"><img src="static/images/logocyber.png" alt="" width="100"
+                  height="101">
+              </div>
+            </div>
+            <div class="layer-06">
+              <div class="layer" data-depth="0.65"><img src="static/images/logocyber.png" alt="" width="240"
+                  height="243">
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section class="section section-variant-1 bg-default text-left" id="start">
+        <!-- section wave-->
+        <div class="section-wave"> <svg x="0px" y="0px" width="1920px" height="46px" viewBox="0 0 1920 46"
+            preserveAspectRatio="none">
+            <path
+              d="M1920,0.5c-82.8,0-109.1,44-192.3,44c-78.8,0-116.2-44-191.7-44c-77.1,0-115.9,44-192,44c-78.2,0-114.6-44-192-44c-78.4,0-115.3,44-192,44c-76.9-0.1-119-44-192-44c-77,0-115.2,44-192,44c-73.6,0-114-44-190.9-44c-78.5,0-117.2,44-194.1,44c-75.9,0-113-44-191-44V46h1920V0.5z">
+            </path>
+          </svg> </div>
+        <div class="container-wide">
+          <div class="row justify-content-xl-end row-50">
+            <div class="col-xl-6">
+              <div class="parallax-text-wrap">
+                <h3>Our Story</h3><span class="parallax-text" style="padding-bottom: 40px;">about
+                  us</span>
+              </div>
+              <hr class="divider divider-left divider-default" style="border-top: 0.00001px solid black;">
+              <div class="row row-fix">
+                <div class="col-xl-11">
+                  <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-1">
+                    <!-- Nav tabs-->
+                    <ul class="list-fix nav nav-tabs">
+                      <li class="nav-item"><a class="nav-link active show" href="#tabs-1-1"
+                          data-toggle="tab">Overview</a>
+                      </li>
+                    </ul> <!-- Tab panes-->
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="tabs-1-1">
+                        <h5>Cyber City is an innovative company which combines creative desiging ,complex code and
+                          flawless functionality to create the website of your dreams.</h5>
+                        <p>We are a company that design, develop your website maintain it throughout the year and also
+                          rank it in the first page of google .
+                          We also offer graphic design and social media management where we can promote your products or
+                          services by using Facebook Ads or Google Ads<span id="dots">...</span><span id="more"> based
+                            on
+                            your company preferences.
+                            In addition to this we also implement Secure Sockets Layer certificate to your website to
+                            make
+                            it a secure and trusted website. We are a team that are always bringing you the best
+                            services
+                            in the world. </span></p><button onclick="myreadingFunction()" id="myBtn"
+                          class="button myreadingBtn">Read more</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 text-center">
+              <div class="image-position-01">
+                <div class="blick-wrap"><img class="image-wrap" src="static/images/ipad-01-940x8521.png" alt=""
+                    width="940" height="852">
+                  <div class="blick-overlay" data-blick-overlay="ipad"></div>
+                  <div class="blick-content"><img src="static/images/blick2.png" alt="" width="1250px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section-wrap section-wrap-lg section-wrap-sm bg-gray-darker novi-background text-center text-md-left">
+        <div class="section-wrap-inner">
+          <div class="container container-wide">
+            <div class="row row-fix row-50 justify-content-center justify-content-xl-start">
+              <div class="col-md-12 col-lg-10 col-xl-7 col-xxl-6"> </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section novi-bg novi-bg-img section-variant-2 bg-gray-darker">
+        <div class="container-wide">
+          <div class="row row-fix text-center">
+            <div class="col-sm-12">
+              <h3>What you get with Cyber City</h3>
+              <div class="divider divider-default"></div>
+            </div>
+          </div>
+          <div class="row row-50 row-xxl-90 offset-custom-2">
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInLeftSmall" data-wow-delay=".1s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-code"></i>
+                  <h6 class="box-minimal-title">web Development</h6>
+                </div>
+                <div class="box-minimal-text">We develop quality and perfect Websites and also maintain it continuously
+                  and securely for a great price based on your companies requirements.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInLeftSmall" data-wow-delay=".2s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-object-group"></i>
+                  <h6 class="box-minimal-title">web design</h6>
+                </div>
+                <div class="box-minimal-text">We have the power to create beautiful, engaging HTML5 content. We use
+                  animation and interactive elements to bring your creative vision to life.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInLeftSmall" data-wow-delay=".3s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-tablet"></i>
+                  <h6 class="box-minimal-title">responsive design</h6>
+                </div>
+                <div class="box-minimal-text">If you want your future website to be displayed perfectly on any device,
+                  then Cyber City is certainly your #1 choice! With its full responsiveness, even smartphones can load
+                  it.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInLeftSmall" data-wow-delay=".4s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-line-chart"></i>
+                  <h6 class="box-minimal-title">Forex trading</h6>
+                </div>
+                <div class="box-minimal-text">Our team have the best statistics on foreign exchange market and will give
+                  you meetings and advices on forex trading, which will make you richer everyday.
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInRightSmall" data-wow-delay=".1s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-money"></i>
+                  <h6 class="box-minimal-title">save your money</h6>
+                </div>
+                <div class="box-minimal-text">Cyber City allows everyone to save an immense amount of money by getting
+                  the best and multipurpose websites at an affordable price.
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInRightSmall" data-wow-delay=".2s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-code-fork"></i>
+                  <h6 class="box-minimal-title">social media</h6>
+                </div>
+                <div class="box-minimal-text">It is important to maintain feedback with your clients and subscribers in
+                  various social networks. It can be done easily with our social media menagment included in our
+                  services.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInRightSmall" data-wow-delay=".3s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-group"></i>
+                  <h6 class="box-minimal-title">24/7 support</h6>
+                </div>
+                <div class="box-minimal-text">Our qualified and friendly support team is always ready to help you, 24
+                  hours a day, 7 days a week. If you have a question about Cyber City, don’t hesitate to contact them
+                  immediately.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInRightSmall" data-wow-delay=".4s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-cart-arrow-down"></i>
+                  <h6 class="box-minimal-title">e-commerce</h6>
+                </div>
+                <div class="box-minimal-text">If you have a bussiness and you want your products to be more easily
+                  accessible to bigger audiences? Than our e-commerce websites our excatly what your company needs.
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg bg-default text-center">
+        <!-- section wave-->
+        <div class="section-wave"> </div>
+        <div class="container container-wide">
+          <div class="row row-fix row-50 row-custom-bordered">
+            <div class="col-sm-6 col-lg-3">
+              <!-- Box minimal-->
+              <article class="box-simple">
+                <i class="fa fa-map-marker"></i>
+                <h6>Address</h6>
+                <div class="box-simple-text">Everywhere in the world</div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <!-- Box simple-->
+              <article class="box-simple">
+                <i class="fa fa-phone"></i>
+                <h6>phone</h6>
+                <div class="box-simple-text">
+                  <ul class="list-comma list-0">
+                    <li>+ 383-45-224-381</li>
+                    <li>+ 383-49-117-733</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <!-- Box simple-->
+              <article class="box-simple">
+                <i class="fa fa-envelope"></i>
+                <h6>e-mail</h6>
+                <div class="box-simple-text">cybercityy.ks@gmail.com</div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <!-- Box simple-->
+              <article class="box-simple">
+                <i class="fa fa-hourglass"></i>
+                <h6>opening hours</h6>
+                <div class="box-simple-text">
+                  <ul class="list-0">
+                    <li>Mon–Fri: 9:00 am–6:00 pm</li>
+                    <li>Sat–Sun: 11:00 am–4:00 pm</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-xs text-center bg-gradient-1">
+        <div class="container-wide">
+          <div class="box-cta-thin">
+            <p class="big"><span class="badge-cta badge-cta-primary">Hot!</span><strong>Cyber
+                City</strong><span>&nbsp;is
+                your choice in the world of great websites.&nbsp;</span><a class="link-bold" href="/contactus"
+                target="_blank">Call now!</a></p>
+          </div>
+        </div>
+      </section>
+      <footer class="section novi-bg1 novi-bg-img page-footer page-footer-minimal text-center bg-gray-darker">
+        <div class="container container-wide">
+          <div class="row justify-content-sm-center align-items-md-center row-30">
+            <div class="col-md-10 col-lg-7 col-xl-4 text-xl-left" id="removefooter"></div>
+            <div class="col-md-10 col-lg-7 col-xl-4">
+              <p class="rights"><span>Copyright © </span><span class="copyright-year"> 2020</span><span></span><span>
+                Cyber City</span><span>.</span></p>
+            </div>
+            <div class="col-md-10 col-lg-7 col-xl-4 text-xl-right">
+              <ul class="group-xs group-middle">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-google"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
+
+
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!-- Dark mode -->
+    <div id="dark-mode">
+      <header class="section novi-bg novi-bg-img page-header breadcrumbs-custom-wrap bg-gradient bg-secondary-2">
+        <div class="rd-navbar-wrap rd-navbar-default">
+          <nav class="rd-navbar" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+            data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fullwidth" data-xl-layout="rd-navbar-static"
+            data-xxl-layout="rd-navbar-static" data-xxxl-layout="rd-navbar-static"
+            data-lg-device-layout="rd-navbar-fullwidth" data-xl-device-layout="rd-navbar-static"
+            data-xxl-device-layout="rd-navbar-static" data-xxxl-device-layout="rd-navbar-static"
+            data-stick-up-offset="1px" data-sm-stick-up-offset="1px" data-md-stick-up-offset="1px"
+            data-lg-stick-up-offset="1px" data-xl-stick-up-offset="1px" data-xxl-stick-up-offset="1px"
+            data-xxx-lstick-up-offset="1px" data-stick-up="true">
+            <div class="rd-navbar-inner">
+              <div class="rd-navbar-panel"> <button class="rd-navbar-toggle"
+                  data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <div class="rd-navbar-brand"> <a class="brand-name" href="/"><img class="logo-default zoom"
+                      src="static/images/cyberlogo4.png" alt="" height="51px"><img class="logo-inverse zoom"
+                      src="static/images/cyberlogo4.png" alt="" height="51px"></a>
+                </div>
+              </div>
+              <div class="rd-navbar-aside-right">
+                <div class="rd-navbar-aside-right-inner" style="margin-right: 25px; padding-top: 3px;">
+                  <i class="fa fa-toggle-on" onclick="mylightmodeFunction()"></i>
+                </div>
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item active" style="margin-right: 25px;"><a class="rd-nav-link" href="/">Home</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="rd-navbar-collapse-toggle" data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                <div class="rd-navbar-aside-right-inner rd-navbar-collapse">
+                  <a class="button button-sm button-default-outline button-nina" href="/contactus">Contact us</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <section class="breadcrumbs-custom breadcrumbs-custom-lg breadcrumbs-custom-svg">
+          <div class="container">
+            <h3 class="typed-text-wrap"><span data-novi-id="1" style="color: white; font-size: 60px;">Cyber city</span>
+            </h3>
+            <h5 class="fadeIn" style="color: #f1f1f1; font-size: 25px;"><span data-novi-id="2"><span
+                  class="typed-text"></span></span></h5>
+            <div class="group-md button-group"><a class="button button-default-outline button-nina" href="/contactus"
+                target="_blank">contact us&nbsp;</a></div>
+          </div>
+          <div class="parallax-scene-js parallax-scene" data-scalar-x="5" data-scalar-y="10">
+            <div class="layer-01">
+              <div class="layer" data-depth="0.25"><img src="static/images/logocyber.png" alt="" width="132"
+                  height="133">
+              </div>
+            </div>
+            <div class="layer-07">
+              <div class="layer" data-depth=".35"><img src="static/images/logocyber.png" alt="" width="186"
+                  height="208">
+              </div>
+            </div>
+            <div class="layer-08">
+              <div class="layer" data-depth=".30"><img src="static/images/logocyber.png" alt="" width="150"
+                  height="151">
+              </div>
+            </div>
+            <div class="layer-03">
+              <div class="layer" data-depth="0.1"><img src="static/images/logocyber.png" alt="" width="108"
+                  height="120">
+              </div>
+            </div>
+            <div class="layer-04">
+              <div class="layer" data-depth="0.25"><img src="static/images/logocyber.png" alt="" width="124"
+                  height="145">
+              </div>
+            </div>
+            <div class="layer-05">
+              <div class="layer" data-depth="0.15"><img src="static/images/logocyber.png" alt="" width="100"
+                  height="101">
+              </div>
+            </div>
+            <div class="layer-06">
+              <div class="layer" data-depth="0.65"><img src="static/images/logocyber.png" alt="" width="240"
+                  height="243">
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+      <section class="section section-variant-1 bg-default1 text-left" id="start">
+        <!-- section wave-->
+        <div class="section-wave"> <svg x="0px" y="0px" width="1920px" height="46px" viewBox="0 0 1920 46"
+            preserveAspectRatio="none">
+            <path
+              d="M1920,0.5c-82.8,0-109.1,44-192.3,44c-78.8,0-116.2-44-191.7-44c-77.1,0-115.9,44-192,44c-78.2,0-114.6-44-192-44c-78.4,0-115.3,44-192,44c-76.9-0.1-119-44-192-44c-77,0-115.2,44-192,44c-73.6,0-114-44-190.9-44c-78.5,0-117.2,44-194.1,44c-75.9,0-113-44-191-44V46h1920V0.5z">
+            </path>
+          </svg> </div>
+        <div class="container-wide">
+          <div class="row justify-content-xl-end row-50">
+            <div class="col-xl-6">
+              <div class="parallax-text-wrap">
+                <h3 style="color: #f1f1f1;">Our Story</h3><span class="parallax-text" style="opacity: 0.12;">about
+                  us</span>
+              </div>
+              <hr class="divider divider-left divider-default" style="border-top: 0.00001px solid black;">
+              <div class="row row-fix">
+                <div class="col-xl-11">
+                  <div class="tabs-custom tabs-horizontal tabs-line" id="tabs-1">
+                    <!-- Nav tabs-->
+                    <ul class="list-fix nav nav-tabs">
+                      <li class="nav-item"><a class="nav-link active show" href="#tabs-1-1"
+                          data-toggle="tab">Overview</a>
+                      </li>
+                    </ul> <!-- Tab panes-->
+                    <div class="tab-content">
+                      <div class="tab-pane fade show active" id="tabs-1-1">
+                        <h5 style="color: white;">Cyber City is an innovative company which combines creative designing
+                          ,complex code and flawless functionality to create the website of your dreams.</h5>
+                        <p>We are a company that design, develop your website maintain it throughout the year and also
+                          rank it in the first page of google .
+                          We also offer graphic design and social media management where we can promote your products or
+                          services by using Facebook Ads or Google Ads<span id="dots">...</span><span id="more"> based
+                            on
+                            your company preferences.
+                            In addition to this we also implement Secure Sockets Layer certificate to your website to
+                            make
+                            it a secure and trusted website. We are a team that are always bringing you the best
+                            services
+                            in the world. </span></p><button onclick="myreadingFunction()" id="myBtn"
+                          class="button myreadingBtn">Read more</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-5 text-center">
+              <div class="image-position-01">
+                <div class="blick-wrap"><img class="image-wrap" src="static/images/ipad-01-940x8521.png" alt=""
+                    width="940" height="852">
+                  <div class="blick-overlay" data-blick-overlay="ipad"></div>
+                  <div class="blick-content"><img src="static/images/blick2.png" alt="Cyber City" width="1250px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section section-wrap section-wrap-lg section-wrap-sm bg-gray-darker novi-background text-center text-md-left">
+        <div class="section-wrap-inner">
+          <div class="container container-wide">
+            <div class="row row-fix row-50 justify-content-center justify-content-xl-start">
+              <div class="col-md-12 col-lg-10 col-xl-7 col-xxl-6"> </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section novi-bg novi-bg-img section-variant-2 bg-gray-darker" id="section1">
+        <div class="container-wide">
+          <div class="row row-fix text-center">
+            <div class="col-sm-12">
+              <h3>What you get with Cyber City</h3>
+              <div class="divider divider-default"></div>
+            </div>
+          </div>
+          <div class="row row-50 row-xxl-90 offset-custom-2">
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInLeftSmall" data-wow-delay=".1s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-code"></i>
+                  <h6 class="box-minimal-title">Web Development</h6>
+                </div>
+                <div class="box-minimal-text">We develop quality and perfect Websites and also maintain it continuously
+                  and securely for a great price based on your companies requirements.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInLeftSmall" data-wow-delay=".2s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-object-group"></i>
+                  <h6 class="box-minimal-title">Web design</h6>
+                </div>
+                <div class="box-minimal-text">We have the power to create beautiful, engaging HTML5 content. We use
+                  animation and interactive elements to bring your creative vision to life.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInLeftSmall" data-wow-delay=".3s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-tablet"></i>
+                  <h6 class="box-minimal-title">responsive design</h6>
+                </div>
+                <div class="box-minimal-text">If you want your future website to be displayed perfectly on any device,
+                  then Cyber City is certainly your #1 choice! With its full responsiveness, even smartphones can load
+                  it.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInLeftSmall" data-wow-delay=".4s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-line-chart"></i>
+                  <h6 class="box-minimal-title">Forex trading</h6>
+                </div>
+                <div class="box-minimal-text">Our team have the best statistics on foreign exchange market and will give
+                  you meetings and advices on forex trading, which will make you richer everyday.
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInRightSmall" data-wow-delay=".1s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-money"></i>
+                  <h6 class="box-minimal-title">save your money</h6>
+                </div>
+                <div class="box-minimal-text">Cyber City allows everyone to save an immense amount of money by getting
+                  the
+                  best and multipurpose websites at an affordable price.
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInRightSmall" data-wow-delay=".2s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-code-fork"></i>
+                  <h6 class="box-minimal-title">social media</h6>
+                </div>
+                <div class="box-minimal-text">It is important to maintain feedback with your clients and subscribers in
+                  various social networks. It can be done easily with our social media menagment included in our
+                  services.
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInRightSmall" data-wow-delay=".3s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-group"></i>
+                  <h6 class="box-minimal-title">24/7 support</h6>
+                </div>
+                <div class="box-minimal-text">Our qualified and friendly support team is always ready to help you, 24
+                  hours a day, 7 days a week. If you have a question about Cyber City, don’t hesitate to contact them
+                  immediately.</div>
+              </article>
+            </div>
+            <div class="col-sm-10 col-md-6 col-xl-3 fadeInRightSmall" data-wow-delay=".4s">
+              <article class="box-minimal">
+                <div class="box-minimal-header">
+                  <i class="fa fa-cart-arrow-down"></i>
+                  <h6 class="box-minimal-title">E-commerce</h6>
+                </div>
+                <div class="box-minimal-text">If you have a bussiness and you want your products to be more easily
+                  accessible to bigger audiences? Than our e-commerce websites our excatly what your company needs.
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-lg bg-default1 text-center">
+        <!-- section wave-->
+        <div class="section-wave"> </div>
+        <div class="container container-wide">
+          <div class="row row-fix row-50 row-custom-bordered">
+            <div class="col-sm-6 col-lg-3">
+              <!-- Box minimal-->
+              <article class="box-simple">
+                <i class="fa fa-map-marker"></i>
+                <h6 style="color: #f1f1f1;">Address</h6>
+                <div class="box-simple-text" style="color: #f1f1f1;">Everywhere in the world</div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <!-- Box simple-->
+              <article class="box-simple">
+                <i class="fa fa-phone"></i>
+                <h6 style="color: #f1f1f1;">phone</h6>
+                <div class="box-simple-text">
+                  <ul class="list-comma list-0" style="color: #f1f1f1;">
+                    <li>+ 383-45-224-381</li>
+                    <li>+ 383-49-117-733</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <!-- Box simple-->
+              <article class="box-simple">
+                <i class="fa fa-envelope"></i>
+                <h6 style="color: #f1f1f1;">e-mail</h6>
+                <div class="box-simple-text" style="color: #f1f1f1;">cybercityy.ks@gmail.com</div>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <!-- Box simple-->
+              <article class="box-simple">
+                <i class="fa fa-hourglass"></i>
+                <h6 style="color: #f1f1f1;">opening hours</h6>
+                <div class="box-simple-text">
+                  <ul class="list-0" style="color: #f1f1f1;">
+                    <li>Mon–Fri: 9:00 am–6:00 pm</li>
+                    <li>Sat–Sun: 11:00 am–4:00 pm</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-xs text-center bg-gradient-1">
+        <div class="container-wide">
+          <div class="box-cta-thin">
+            <p class="big"><span class="badge-cta badge-cta-primary">Hot!</span><strong>Cyber
+                City</strong><span>&nbsp;is
+                your choice in the world of great websites.&nbsp;</span><a class="link-bold" href="/contactus"
+                target="_blank">Call now!</a></p>
+          </div>
+        </div>
+      </section>
+      <footer class="section novi-bg1 novi-bg-img page-footer page-footer-minimal text-center bg-gray-darker">
+        <div class="container container-wide">
+          <div class="row justify-content-sm-center align-items-md-center row-30">
+            <div class="col-md-10 col-lg-7 col-xl-4 text-xl-left" id="removefooter"></div>
+            <div class="col-md-10 col-lg-7 col-xl-4">
+              <p class="rights"><span>Copyright © </span><span class="copyright-year"> 2020</span><span></span><span>
+                  Cyber City</span><span>.</span></p>
+            </div>
+            <div class="col-md-10 col-lg-7 col-xl-4 text-xl-right">
+              <ul class="group-xs group-middle">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-linkedin"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-google"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <!---->
+
+    </div>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script>
+    function myreadingFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+  </script>
+  <script>
+    function mydarkmodeFunction() {
+      document.getElementById("dark-mode").style.display = "block";
+      document.getElementById("light-mode").style.display = "none";
+    }
+    function mylightmodeFunction() {
+      document.getElementById("dark-mode").style.display = "none";
+      document.getElementById("light-mode").style.display = "block";
+    }
+  </script>
+  <script src="static/js/core.min.js"></script>
+  <script src="static/js/jvscript2.js"></script>
+</body>
+
+</html>
