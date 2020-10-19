@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="static/css/style.css">
   <link rel="stylesheet" href="static/css/fonts.css">
   <link rel="stylesheet" href="static/css/novi.css">
-  <link rel="stylesheet" href="static/css/update.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
@@ -110,6 +109,9 @@
   }
 
   #more {
+    display: none;
+  }
+  #more1 {
     display: none;
   }
 
@@ -656,18 +658,18 @@
                       <div class="tab-pane fade show active" id="tabs-1-1">
                         <h5 style="color: white;">Cyber City is an innovative company which combines creative designing
                           ,complex code and flawless functionality to create the website of your dreams.</h5>
-                        <p>We are a company that design, develop your website maintain it throughout the year and also
-                          rank it in the first page of google .
-                          We also offer graphic design and social media management where we can promote your products or
-                          services by using Facebook Ads or Google Ads<span id="dots">...</span><span id="more"> based
-                            on
-                            your company preferences.
-                            In addition to this we also implement Secure Sockets Layer certificate to your website to
-                            make
-                            it a secure and trusted website. We are a team that are always bringing you the best
-                            services
-                            in the world. </span></p><button onclick="myreadingFunction()" id="myBtn"
-                          class="button myreadingBtn">Read more</button>
+                          <p>We are a company that design, develop your website maintain it throughout the year and also
+                            rank it in the first page of google .
+                            We also offer graphic design and social media management where we can promote your products or
+                            services by using Facebook Ads or Google Ads<span id="dots1">...</span><span id="more1"> based
+                              on
+                              your company preferences.
+                              In addition to this we also implement Secure Sockets Layer certificate to your website to
+                              make
+                              it a secure and trusted website. We are a team that are always bringing you the best
+                              services
+                              in the world. </span></p><button onclick="myreadingFunction1()" id="myBtn1"
+                            class="button myreadingBtn">Read more</button>
                       </div>
                     </div>
                   </div>
@@ -886,6 +888,24 @@
       var dots = document.getElementById("dots");
       var moreText = document.getElementById("more");
       var btnText = document.getElementById("myBtn");
+
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+      }
+    }
+
+  </script>
+  <script>
+    function myreadingFunction1() {
+      var dots = document.getElementById("dots1");
+      var moreText = document.getElementById("more1");
+      var btnText = document.getElementById("myBtn1");
 
       if (dots.style.display === "none") {
         dots.style.display = "inline";
